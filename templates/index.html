@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>AI Phishing Email Detector</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<h1>AI-Based Phishing Email Detector</h1>
+
+<form action="/predict" method="post">
+
+<textarea name="email" rows="10" cols="60"
+placeholder="Paste email content here"></textarea>
+
+<br><br>
+
+<button type="submit">Check Email</button>
+
+</form>
+
+<h2>{{ prediction_text }}</h2>
+
+</body>
+</html>
